@@ -13,7 +13,6 @@ df_nongk2 = df['position'] != 'GK S'
 df_last = df[df_nongk]
 df_last2 = df_last[df_nongk2]
 
-scaler = MinMaxScaler(feature_range=(0,1))
 
 
 df_last_val = df_last2.drop(['id', 'player_name', 'position'], axis=1)
